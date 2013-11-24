@@ -1,0 +1,72 @@
+<resources>
+
+    <!-- Strings related to Settings -->
+
+	<!-- Enable settings -->
+	<string name="pref_header_enable">Enable SMS Morsify</string>
+
+    <string name="pref_title_enabled">Enable SMS Morsify</string>
+	<string name="pref_key_enabled">pref_enabled</string>
+	<string name="pref_default_enabled">false</string>
+
+    <!-- General settings -->
+    <string name="pref_header_general">General</string>
+
+	<string name="pref_title_vibrate">Vibrate</string>
+    <string name="pref_summary_vibrate">Vibrate in Morse code</string>
+	<string name="pref_key_vibrate">pref_vibrate</string>
+	<string name="pref_default_vibrate">true</string>
+	
+    <string name="pref_title_beep">Beep</string>
+    <string name="pref_summary_beep">Beep in Morse code</string>
+	<string name="pref_key_beep">pref_beep</string>
+	<string name="pref_default_beep">false</string>
+	
+    <string name="pref_title_screen_check">Check for screen on</string>
+    <string name="pref_summary_screen_check">Disable if screen is on</string>
+	<string name="pref_key_screen_check">pref_screen_check</string>
+	<string name="pref_default_screen_check">true</string>
+
+    <string name="pref_title_delay">Delay before start</string>
+    <string name="pref_units_delay">\u0020s</string>
+	<string name="pref_key_delay">pref_delay</string>
+	<string name="pref_dialogTitle_delay">Delay before start</string>
+	<string name="pref_dialogMessage_delay">Increase this if Notification vibration interferes with Morse code.</string>
+
+	<!-- Morse code settings -->
+	<string name="pref_header_morse">Morse code options</string>
+
+	<string name="pref_title_use_numbers">Numbers</string>
+	<string name="pref_summary_use_numbers">Convert numbers</string>
+	<string name="pref_key_use_numbers">pref_use_numbers</string>
+    <string name="pref_default_use_numbers">true</string>
+
+	<string name="pref_title_use_symbols">Symbols</string>
+	<string name="pref_summary_use_symbols">Convert symbols</string>
+	<string name="pref_key_use_symbols">pref_use_symbols</string>
+    <string name="pref_default_use_symbols">true</string>
+
+	<string name="pref_title_use_prosigns">Start/end of transmission</string>
+	<string name="pref_summary_use_prosigns">Add CT(-.-.-) at start and SK(&#8230;-.-) at end of message</string>
+	<string name="pref_key_use_prosigns">pref_use_prosigns</string>
+    <string name="pref_default_use_prosigns">true</string>
+
+    <string name="pref_title_dit">Dot duration</string>
+    <string name="pref_units_dit">\u0020ms</string>
+	<string name="pref_key_dit">pref_dit</string>
+	<string name="pref_dialogTitle_dit">Dot</string>
+	<string name="pref_dialogMessage_dit">Duration of dot. Dash duration is three times the dot.</string>
+
+    <string name="pref_title_short_gap">Short gap</string>
+    <string name="pref_units_short_gap">\u0020dots</string>
+	<string name="pref_key_short_gap">pref_short_gap</string>
+	<string name="pref_dialogTitle_short_gap">Short gap</string>
+	<string name="pref_dialogMessage_short_gap">Gap between letters.</string>
+
+    <string name="pref_title_medium_gap">Medium gap</string>
+    <string name="pref_units_medium_gap">\u0020dots</string>
+	<string name="pref_key_medium_gap">pref_medium_gap</string>
+	<string name="pref_dialogTitle_medium_gap">Medium gap</string>
+	<string name="pref_dialogMessage_medium_gap">Gap between words.</string>
+
+</resources>

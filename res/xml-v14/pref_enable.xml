@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- API v14 and higher uses an on/off switch instead of checkbox -->
+    <SwitchPreference
+        android:defaultValue="@string/pref_default_enabled"
+        android:key="@string/pref_key_enabled"
+        android:title="@string/pref_title_enabled"
+        android:persistent="true"
+        />
+
+</PreferenceScreen>

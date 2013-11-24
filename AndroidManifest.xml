@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.savanto.android.smsmorsify"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <!-- Permissions required -->
+	<uses-permission android:name="android.permission.RECEIVE_SMS" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- Settings activity to control preferences -->
+        <activity
+            android:name="com.savanto.android.smsmorsify.SettingsPreferenceActivity"
+            android:label="@string/app_name" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- BroadcastReceiver that listens for received SMSs -->
+        <receiver android:name="com.savanto.android.smsmorsify.SMSReceiver">
+        	<intent-filter>
+        		<action android:name="android.provider.Telephony.SMS_RECEIVED" />
+        	</intent-filter>
+        </receiver>
+
+        <!-- IntentService that performs the Morse code conversion and vibration -->
+        <service android:name="com.savanto.android.smsmorsify.MorseService" />
+
+        <!-- BroadcaseReceiver that listens for screen on
+        <receiver android:name="com.savanto.smsmorsify.ScreenOnReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_ON" />
+                <action android:name="android.intent.action.SCREEN_OFF" />
+            </intent-filter>
+        </receiver>
+-->
+	</application>
+</manifest>

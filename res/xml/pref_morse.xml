@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smsmorsify="http://schemas.android.com/apk/res/com.savanto.android.smsmorsify" >
+
+    <!-- Optional Morse settings -->
+    <CheckBoxPreference
+        android:defaultValue="@string/pref_default_use_numbers"
+        android:key="@string/pref_key_use_numbers"
+        android:title="@string/pref_title_use_numbers"
+        android:summary="@string/pref_summary_use_numbers"
+        android:persistent="true"
+        />
+
+    <CheckBoxPreference
+        android:defaultValue="@string/pref_default_use_symbols"
+        android:key="@string/pref_key_use_symbols"
+        android:title="@string/pref_title_use_symbols"
+        android:summary="@string/pref_summary_use_symbols"
+        android:persistent="true"
+        />
+
+    <CheckBoxPreference
+        android:defaultValue="@string/pref_default_use_prosigns"
+        android:key="@string/pref_key_use_prosigns"
+        android:title="@string/pref_title_use_prosigns"
+        android:summary="@string/pref_summary_use_prosigns"
+        android:persistent="true"
+        />
+
+	<!-- Fine-tuning of Morse code transmission -->
+    <!-- Dot duration popup dialog with seekbar -->
+    <com.savanto.android.smsmorsify.SeekBarPreference
+        android:key="@string/pref_key_dit"
+        android:title="@string/pref_title_dit"
+        android:dialogTitle="@string/pref_dialogTitle_dit"
+        android:dialogMessage="@string/pref_dialogMessage_dit"
+        smsmorsify:units="@string/pref_units_dit"
+        smsmorsify:maxValue="500"
+        smsmorsify:minValue="50"
+        android:defaultValue="100"
+        android:numeric="integer"
+        android:persistent="true"
+        />
+
+    <!-- Short gap duration popup dialog with seekbar -->
+    <com.savanto.android.smsmorsify.SeekBarPreference
+        android:key="@string/pref_key_short_gap"
+        android:title="@string/pref_title_short_gap"
+        android:dialogTitle="@string/pref_dialogTitle_short_gap"
+        android:dialogMessage="@string/pref_dialogMessage_short_gap"
+        smsmorsify:units="@string/pref_units_short_gap"
+        smsmorsify:maxValue="7"
+        smsmorsify:minValue="2"
+        android:defaultValue="3"
+        android:numeric="integer"
+        android:persistent="true"
+        />
+
+    <!-- Medium gap duration popup dialog with seekbar -->
+    <com.savanto.android.smsmorsify.SeekBarPreference
+        android:key="@string/pref_key_medium_gap"
+        android:title="@string/pref_title_medium_gap"
+        android:dialogTitle="@string/pref_dialogTitle_medium_gap"
+        android:dialogMessage="@string/pref_dialogMessage_medium_gap"
+        smsmorsify:units="@string/pref_units_medium_gap"
+        smsmorsify:maxValue="15"
+        smsmorsify:minValue="4"
+        android:defaultValue="7"
+        android:numeric="integer"
+        android:persistent="true"
+        />
+
+</PreferenceScreen>

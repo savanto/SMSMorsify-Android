@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:smsmorsify="http://schemas.android.com/apk/res/com.savanto.android.smsmorsify" >
+
+    <!-- Program behavior -->
+<!--
+	<CheckBoxPreference
+        android:defaultValue="@string/pref_default_vibrate"
+        android:key="@string/pref_key_vibrate"
+        android:title="@string/pref_title_vibrate"
+        android:summary="@string/pref_summary_vibrate"
+        android:persistent="true"
+        />
+-->
+<!--
+    <CheckBoxPreference
+        android:defaultValue="@string/pref_default_beep"
+        android:key="@string/pref_key_beep"
+        android:title="@string/pref_title_beep"
+        android:summary="@string/pref_summary_beep"
+        android:persistent="true"
+        android:
+        />
+-->
+    <CheckBoxPreference
+        android:defaultValue="@string/pref_default_screen_check"
+        android:key="@string/pref_key_screen_check"
+        android:title="@string/pref_title_screen_check"
+        android:summary="@string/pref_summary_screen_check"
+        android:persistent="true"
+        />
+
+    <!-- Delay popup dialog with seekbar -->
+    <com.savanto.android.smsmorsify.SeekBarPreference
+        android:key="@string/pref_key_delay"
+        android:title="@string/pref_title_delay"
+        android:dialogTitle="@string/pref_dialogTitle_delay"
+        android:dialogMessage="@string/pref_dialogMessage_delay"
+        smsmorsify:units="@string/pref_units_delay"
+        smsmorsify:maxValue="10"
+        smsmorsify:minValue="0"
+        android:defaultValue="5"
+        android:numeric="integer"
+        android:persistent="true"
+        />
+
+</PreferenceScreen>

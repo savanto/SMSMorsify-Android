@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!-- Enable/disable Morse encoding/transmission -->
+    <CheckBoxPreference
+        android:defaultValue="@string/pref_default_enabled"
+        android:key="@string/pref_key_enabled"
+        android:title="@string/pref_title_enabled"
+        android:persistent="true"
+        />
+
+</PreferenceScreen>
